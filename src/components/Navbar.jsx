@@ -11,6 +11,7 @@ import {
   Github,
 } from "lucide-react";
 import { useDarkMode } from "../contexts/DarkModeContext";
+import ReactCraftLogo from "../assets/reactcraft-logo.svg";
 
 const navIcons = {
   Documentation: Book,
@@ -38,9 +39,11 @@ const Navbar = () => {
           <div className="flex justify-between items-center h-16">
             {/* Logo */}
             <div className="flex items-center space-x-2">
-              <div className="flex items-center justify-center w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-lg">
-                <Code className="w-5 h-5 text-white" />
-              </div>
+              <img
+                src={ReactCraftLogo}
+                alt="ReactCraft UI Logo"
+                className="w-8 h-8"
+              />
               <span className="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
                 ReactCraft
               </span>
